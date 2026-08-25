@@ -45,7 +45,6 @@ const props = defineProps({
 
 const emit = defineEmits(['update:modelValue', 'search', 'clear'])
 
-// Дебаунс: автопошук ТІЛЬКИ якщо >= 3 символів або рядок порожній
 const triggerSearch = useDebounceFn((val) => {
   const q = val.trim()
   if (q.length >= 3 || q.length === 0) {
