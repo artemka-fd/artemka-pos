@@ -101,9 +101,7 @@ function handleConfirm() {
   // } else {
   //   nav.goToError()
   // }
-  console.log(cartStore.items);
   const submitOrder = async () => {
-    console.log('webhookUrl');
     const webhookUrl = import.meta.env.VITE_WEBHOOK_URL;
     try {
       const response = await fetch(webhookUrl, {
@@ -112,7 +110,7 @@ function handleConfirm() {
           // Цей рядок – чит-код, який вимикає жорстку перевірку CORS
           'Content-Type': 'text/plain;charset=utf-8', 
         },
-        body: JSON.stringify({ items: cartStore.items })
+        body: JSON.stringify({ items: cartStore.items, paymentMethod: cartStore.paymentMethod })
       });
       
       // Google повертає статус після успішного запису
