@@ -6,7 +6,7 @@
         class="mb-4 flex size-8 items-center justify-center p-1"
         @click="nav.goBack"
       >
-        <img src="/assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
+        <img src="../assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
       </button>
 
       <h1 class="mb-4 text-[28px] font-bold text-black">🛒 Корзина</h1>
@@ -58,7 +58,7 @@
         class="flex w-full items-center justify-center gap-1.5 rounded-[24px] bg-white py-2 transition active:scale-[0.99]"
         @click="showQr = true"
       >
-        <img src="/assets/icon-qr.png" alt="" class="size-6" />
+        <img src="../assets/icon-qr.png" alt="" class="size-6" />
         <span class="text-sm font-bold text-black">
            Показати QR-код
         </span>
@@ -82,10 +82,10 @@
 
 <script setup>
 import { ref } from 'vue'
-import CartItem from '../components/CartItem.vue'
-import QrPopup from '../components/QrPopup.vue'
-import { useCartStore } from '../stores/cart'
-import { useNavigationStore } from '../stores/navigation'
+import CartItem from '@/components/CartItem.vue'
+import QrPopup from '@/components/QrPopup.vue'
+import { useCartStore } from '@/stores/cart'
+import { useNavigationStore } from '@/stores/navigation'
 
 const cartStore = useCartStore()
 const nav = useNavigationStore()

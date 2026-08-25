@@ -28,7 +28,7 @@
         @click="onClear"
       >
         <div class="-rotate-45">
-          <img src="/assets/icon-clear.svg" alt="Очистити" class="size-4" />
+          <img src="../assets/icon-clear.svg" alt="Очистити" class="size-4" />
         </div>
       </button>
     </div>
@@ -40,7 +40,7 @@ import { useDebounceFn } from '@vueuse/core'
 
 const props = defineProps({
   modelValue: { type: String, default: '' },
-  placeholder: { type: String, default: 'Знайди на поличках Хорива...' },
+  placeholder: { type: String, default: 'Знайди на поличках Хорива@.' },
 })
 
 const emit = defineEmits(['update:modelValue', 'search', 'clear'])

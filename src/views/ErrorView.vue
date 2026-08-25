@@ -5,7 +5,7 @@
       class="mb-8 flex size-8 items-center justify-center p-1"
       @click="nav.goToCart()"
     >
-      <img src="/assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
+      <img src="../assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
     </button>
 
     <div class="flex flex-1 flex-col items-center justify-center gap-4 text-center">
@@ -36,7 +36,7 @@
 </template>
 
 <script setup>
-import { useNavigationStore } from '../stores/navigation'
+import { useNavigationStore } from '@/stores/navigation'
 
 const nav = useNavigationStore()
 </script>

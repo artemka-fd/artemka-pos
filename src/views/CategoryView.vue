@@ -13,7 +13,7 @@
           class="mb-4 flex size-8 items-center justify-center p-1"
           @click="nav.goBack"
         >
-        <img src="/assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
+        <img src="../assets/icon-arrow-left.svg" alt="Назад" class="size-6" />
         </button>
         <h1 class="mb-4 text-[28px] font-bold leading-[1.2] text-black">
           {{ category?.emoji }} {{ category?.label }}
@@ -46,11 +46,11 @@
 
 <script setup>
 import { computed, ref } from 'vue'
-import SearchBar from '../components/SearchBar.vue'
-import ProductCard from '../components/ProductCard.vue'
-import { useCatalogStore } from '../stores/catalog'
-import { useCartStore } from '../stores/cart'
-import { useNavigationStore } from '../stores/navigation'
+import SearchBar from '@/components/SearchBar.vue'
+import ProductCard from '@/components/ProductCard.vue'
+import { useCatalogStore } from '@/stores/catalog'
+import { useCartStore } from '@/stores/cart'
+import { useNavigationStore } from '@/stores/navigation'
 
 const catalog = useCatalogStore()
 const cartStore = useCartStore()

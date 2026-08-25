@@ -34,11 +34,11 @@
 
 <script setup>
 import { computed, ref, watch } from 'vue'
-import SearchBar from '../components/SearchBar.vue'
-import ProductCard from '../components/ProductCard.vue'
-import { useCatalogStore } from '../stores/catalog'
-import { useCartStore } from '../stores/cart'
-import { useNavigationStore } from '../stores/navigation'
+import SearchBar from '@/components/SearchBar.vue'
+import ProductCard from '@/components/ProductCard.vue'
+import { useCatalogStore } from '@/stores/catalog'
+import { useCartStore } from '@/stores/cart'
+import { useNavigationStore } from '@/stores/navigation'
 
 const catalog = useCatalogStore()
 const cartStore = useCartStore()

@@ -26,10 +26,10 @@
 
 <script setup>
 import { ref } from 'vue'
-import SearchBar from '../components/SearchBar.vue'
-import CategoryCard from '../components/CategoryCard.vue'
-import { useCatalogStore } from '../stores/catalog'
-import { useNavigationStore } from '../stores/navigation'
+import SearchBar from '@/components/SearchBar.vue'
+import CategoryCard from '@/components/CategoryCard.vue'
+import { useCatalogStore } from '@/stores/catalog'
+import { useNavigationStore } from '@/stores/navigation'
 
 const catalog = useCatalogStore()
 const nav = useNavigationStore()
