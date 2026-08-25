@@ -6,7 +6,7 @@
     >
       <div class="size-4 shrink-0 overflow-clip">
         <img
-          :src="modelValue ? '/assets/icon-search-active.svg' : '/assets/icon-search.svg'"
+          src="../assets/icon-search.svg"
           alt=""
           class="size-full"
         />
@@ -40,7 +40,7 @@ import { useDebounceFn } from '@vueuse/core'
 
 const props = defineProps({
   modelValue: { type: String, default: '' },
-  placeholder: { type: String, default: 'Знайди на поличках Хорива@.' },
+  placeholder: { type: String, default: 'Знайди на поличках Хорива..' },
 })
 
 const emit = defineEmits(['update:modelValue', 'search', 'clear'])
