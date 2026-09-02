@@ -1,5 +1,17 @@
-# Vue 3 + Vite
+# 🛒 Khoryv POS (Мерч-вітрина)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Власна касова POS для швидкого пробиття товарів на барі. Легкий, швидкий, з прямою інтеграцією з Google Sheets замість важкого бекенду. 
+Проєкт оптимізовано для роботи на тачскрінах (планшети, смартфони), також він ідеально лягає в формат Telegram Mini App.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+**Стек технологій**
+* **Фронтенд:** Vue 3 (Composition API) + Vite
+* **Стилізація:** Tailwind CSS
+* **База даних / Бекенд:** Google Sheets + Google Apps Script (безкоштовна і надійна CMS)
+* **Деплой:** Vercel
+
+**Головні фічі**
+* 🪶 **Zero-Backend Архітектура:**  Легкий клієнт без складних серверних залежностей. Уся логіка працює у браузері, забезпечуючи миттєвий відгук навіть на старих барних планшетах.
+* 📊 **Google Sheets як Headless CMS:** База даних, яка не потребує DevOps-підтримки. Транзакції надійно пушаться в таблицю через Apps Script webhook, ідеально готуючи масив даних для автоматичних зведених звітів.
+* ⚡ **Оптимізований тач-інтерфейс:** Інтерфейс створений спеціально для швидкої роботи на планшетах і смартфонах (без зайвих затримок і випадкового зумування екрана).
+* 💸 **Zero-Cost Інфраструктура:** Проєкт не вимагає жодних підписок чи платних серверів. Деплой на Vercel у комбінації з екосистемою Google дорівнює $0 щомісячних витрат на утримання.
+* 📱 **Кросплатформеність:** Працює як звичайний веб-додаток у браузері (або на головному екрані пристрою) чи без проблем розгортається як Telegram Mini App.
