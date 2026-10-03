@@ -13,9 +13,10 @@
 
       <div class="space-y-4">
         <CartItem
-          v-for="item in cartStore.items"
-          :key="item.id"
+          v-for="item in cartStore.items" 
+          :key="item.id" 
           :item="item"
+          @update-price="({ id, price }) => cartStore.updateItemPrice(id, price)"
           @increment="(id) => cartStore.addItem(cartStore.items.find((i) => i.id === id))"
           @decrement="cartStore.removeItem"
           @delete="cartStore.deleteItem"
@@ -77,6 +78,7 @@
     <QrPopup v-model="showQr">
       <div>
         <img src="../assets/qr.png" alt="Назад" class="" />
+        <p class="text-center text-2xl font-bold text-black mb-[20px]">5375 4112 0860 7643</p>
       </div>
     </QrPopup>
   </div>

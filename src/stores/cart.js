@@ -49,6 +49,12 @@ export const useCartStore = defineStore('cart', {
       const index = this.items.findIndex((i) => i.id === id)
       if (index !== -1) this.items.splice(index, 1)
     },
+    updateItemPrice(id, newPrice) {
+      const item = items.value.find(i => i.id === id)
+      if (item) {
+        item.price = Number(newPrice)
+      }
+    },
     setPaymentMethod(method) {
       this.paymentMethod = method
     },

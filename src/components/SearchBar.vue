@@ -1,7 +1,7 @@
 <template>
-  <div class="px-2 pt-2">
+  <div class="px-2 pt-2 flex gap-2 items-center">
     <div
-      class="relative flex items-center gap-2 rounded-[20px] bg-[#fafafa] px-[14px] py-[9px] shadow-[inset_0_2px_8px_rgba(0,0,0,0.13)] transition-shadow"
+      class="relative flex flex-grow items-center gap-2 rounded-[20px] bg-[#fafafa] px-[14px] py-[9px] shadow-[inset_0_2px_8px_rgba(0,0,0,0.13)] transition-shadow"
       :class="{ 'shadow-[inset_0_2px_4px_rgba(0,0,0,0.13)]': modelValue }"
     >
       <div class="size-4 shrink-0 overflow-clip">

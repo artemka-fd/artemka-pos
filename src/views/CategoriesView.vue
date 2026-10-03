@@ -5,7 +5,6 @@
       @search="handleSearch"
       @clear="searchInput = ''"
     />
-
     <div class="px-2">
       <h1 class="mb-4 text-[28px] font-bold leading-[1.2] text-black/80">Категорії</h1>
 
